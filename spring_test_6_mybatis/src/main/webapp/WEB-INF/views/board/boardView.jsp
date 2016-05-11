@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="/p6/">HOME</a>
-<a href="/p6/board/view?num=1">TEST</a>
+	<p>작성자 : ${bdDto.writer}</p>
+	<p>제목 : ${bdDto.title}</p>
 </body>
 </html>

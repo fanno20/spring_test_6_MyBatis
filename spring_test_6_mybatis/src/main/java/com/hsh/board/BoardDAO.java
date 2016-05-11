@@ -5,10 +5,10 @@ import java.util.List;
 
 public interface BoardDAO {
 	//글목록
-		public List<BoardDTO> list(int startNum, int lastNum) throws SQLException;
+	public List<BoardDTO> list(int startNum, int lastNum) throws SQLException;
 
 		//글한개보기
-		public BoardDTO view(BoardDTO bdDto) throws Exception;
+		public BoardDTO view(int num) throws Exception;
 		
 		//글삭제
 		//public int delete(int num) throws SQLException;
