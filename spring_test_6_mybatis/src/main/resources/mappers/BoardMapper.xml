@@ -8,4 +8,12 @@
   		select * from NOTICE_BOARD where num=#{num}
   	</select>
   
+  	<insert id="insert" parameterType="com.hsh.board.BoardDTO">
+  		insert into NOTICE_BOARD values(NOTICE_SEQ.nextVal,#{writer},#{title},#{contents},0,sysdate);
+  	</insert>
+  	
+  	<select id="list" resultType="">
+  	
+  	</select>
+  	
   </mapper>

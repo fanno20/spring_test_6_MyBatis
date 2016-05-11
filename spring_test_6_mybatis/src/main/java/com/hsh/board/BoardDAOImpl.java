@@ -17,15 +17,13 @@ public class BoardDAOImpl implements BoardDAO {
 	
 	@Override
 	public List<BoardDTO> list(int startNum, int lastNum) throws SQLException {
-		// TODO Auto-generated method stub
+		/*sqlSession.selectl*/
 		return null;
 	}
 
 	@Override
 	public BoardDTO view(int num) throws Exception {
-		System.out.println("ttt");
 		BoardDTO bdDto = sqlSession.selectOne(nameSpace+".view", num);
-		System.out.println("test"+bdDto);
 		return bdDto;
 	}
 
